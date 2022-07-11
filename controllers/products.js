@@ -1,4 +1,4 @@
-const Product = require("../models/product");
+const Product = require("../models/product").model;
 
 function newProduct(req, res) {
   res.render("product/add");
@@ -15,7 +15,7 @@ function create(req, res) {
   product.save(function (err) {
     // one way to handle errors
     if (err) return res.redirect("/product/add");
-    console.log(flight);
+    console.log(product);
     // for now, redirect right back to new.ejs
     res.redirect("/product");
   });

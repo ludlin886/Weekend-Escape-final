@@ -16,6 +16,7 @@ const productSchema = new Schema(
 );
 
 module.exports = {
-  mongooseName: mongoose.model("Product", productSchema),
-  productSchema,
+  //key
+  model: mongoose.model("Product", productSchema),
+  productSchema, //key and the value holding the schema
 };

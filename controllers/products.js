@@ -5,14 +5,16 @@ function newProduct(req, res) {
 }
 
 function index(req, res) {
-  res.render("product/index", { title: "Products" });
+  Product.find({}, function (err, products) {
+    res.render("product/index", { title: "Products", products });
+  });
 }
 
 function create(req, res) {
   //product model
   const product = new Product(req.body);
 
-  product.save(function (err) {
+  product.save(function (err, product) {
     // one way to handle errors
     if (err) return res.redirect("/product/add");
     console.log(product);
@@ -21,10 +23,16 @@ function create(req, res) {
   });
 }
 
+function show(req, res) {
+  Product.findById(req.params.id, function (err, product) {
+    res.render("product", { title: "All Products", product });
+    //why do we need the title here and what's after the comma
+  });
+}
 // const product = new Product(req.body);
 // product.save((error, product) => {
 //   if (error) throw error;
 //   res.json(product);
 // });
 
-module.exports = { index, create, newProduct };
+module.exports = { index, create, newProduct, show };

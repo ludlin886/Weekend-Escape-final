@@ -1,4 +1,11 @@
 <%- include('../bases/header', {title:"Product"}) %>
 <body>
-  <h1>This is the Product page</h1>
+  <section id="product-page">
+    <div>name:</div>
+    <div><%= products[0].name %></div>
+    <div>Description:</div>
+    <div><%= products[0].description %></div>
+    <div>Price:</div>
+    <div><%= products[0].price %></div>
+  </section>
 </body>

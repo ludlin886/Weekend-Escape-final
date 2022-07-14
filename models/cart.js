@@ -4,8 +4,8 @@ const Schema = mongoose.Schema;
 
 const cartSchema = new Schema(
   {
-    product: [productSchema],
-    crateDate: Date,
+    products: [productSchema],
+    // crateDate: Date,
   },
   {
     timestamps: true,

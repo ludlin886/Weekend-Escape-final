@@ -1,5 +1,6 @@
 <%- include('../bases/header', {title:"Cart"}) %>
 
 <body>
-  <h1>Will be Released Soon</h1>
+  <% cart.forEach((product) => { %> <% product.products.forEach(element => { %>
+  <%= element.name %> <% }) %> <% }); %>
 </body>

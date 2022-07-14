@@ -26,7 +26,7 @@ app.use(express.static(path.join(__dirname, "public")));
 const productsRouter = require("./routes/products");
 const cartsRouter = require("./routes/carts.js");
 
-app.use("/cart", cartsRouter);
+app.use("/", cartsRouter);
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
 app.use("/", productsRouter);

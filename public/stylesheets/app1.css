@@ -1,0 +1,90 @@
+* {
+  color: rgb(90, 87, 82);
+}
+
+body {
+  background-color: rgb(27, 36, 27);
+  background-image: url("/images/image1.jpg");
+  width: 100vw;
+  background-position: top center;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(173, 121, 10);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(43, 46, 43);
+  font-family: "Rubik", sans-serif;
+}
+
+.navbar-brand {
+  color: rgb(173, 121, 10);
+  text-decoration: none;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: rgb(173, 121, 10);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: rgb(77, 79, 77);
+  color: #c7c5c5;
+}
+
+.hm {
+  text-align: center;
+}
+
+.Add-Product {
+  width: 250px;
+  margin: 0px auto;
+}
+.aph {
+  text-align: center;
+}
+.ap1 {
+  background-color: #505050;
+  color: #2e2e2f;
+  border-style: none;
+}
+#avaliableDate {
+  background-color: #505050;
+  color: #2e2e2f;
+  border-style: none;
+  cursor: pointer;
+}
+.aps {
+  background-color: #5d5c5c;
+  color: #8e8e8f;
+  border-style: none;
+  cursor: pointer;
+}
+
+.gh {
+  text-align: center;
+}
+
+.gp {
+  text-align: center;
+}
+
+.pd {
+  padding: 10px;
+}

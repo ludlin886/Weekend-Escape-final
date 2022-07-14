@@ -29,10 +29,24 @@ function show(req, res) {
     //why do we need the title here and what's after the comma
   });
 }
+function deleteProduct(req, res) {
+  console.log(req.params);
+  Product.findByIdAndRemove(req.params.id)
+    .then((product) => {
+      if (!product) {
+        return res.status(404).send();
+      }
+      res.redirect("/product");
+    })
+    .catch((error) => {
+      res.status(500).send(error);
+    });
+}
+
 // const product = new Product(req.body);
 // product.save((error, product) => {
 //   if (error) throw error;
 //   res.json(product);
 // });
 
-module.exports = { index, create, newProduct, show };
+module.exports = { index, create, newProduct, show, deleteProduct };

@@ -1,22 +1,25 @@
 <%- include('../bases/header', {title: "Add Product"}) %>
 
-<h2>Create Your Product</h2>
-<form action="/product" method="POST">
-  <label>Name:</label>
-  <input type="text" name="name" />
-  <br />
-  <label>Description:</label>
-  <input type="text" name="description" />
-  <br />
-  <label>Price: </label>
-  <input type="text" name="price" />
-  <br />
-  <label for="avaliable-time">Avaliable-Date-From:</label>
-  <input
-    type="datetime-local"
-    id="avaliableDate"
-    name="avaliableDateFrom"
-    value="2020-01-01T00:00"
-  />
-  <button type="submit" value="Add Products">Submit</button>
-</form>
+<h2 class="aph">Create Your Product</h2>
+<div class="Add-Product">
+  <form action="/product" method="POST">
+    <label>Name:</label>
+    <input class="ap1" type="text" name="name" />
+    <p></p>
+    <label>Description:</label>
+    <input class="ap1" type="text" name="description" />
+    <p></p>
+    <label>Price: </label>
+    <input class="ap1" type="text" name="price" />
+    <p></p>
+    <label for="avaliable-time">Avaliable-Date-From:</label>
+    <input
+      type="datetime-local"
+      id="avaliableDate"
+      name="avaliableDateFrom"
+      value="2020-01-01T00:00"
+    />
+    <p></p>
+    <button class="aps" type="submit" value="Add Products">Submit</button>
+  </form>
+</div>

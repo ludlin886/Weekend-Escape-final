@@ -1,7 +1,9 @@
 const Cart = require("../models/cart");
 
 function index(req, res) {
-  res.render("cart/index", { title: "Cart" });
+  Cart.find({}, function (err, cart) {
+    res.render("cart/bag", { title: "Cart", cart });
+  });
 }
 
 module.exports = { index };

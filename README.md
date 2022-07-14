@@ -7,6 +7,8 @@ I always have a dream is about bulding my own store page by myself, and this pro
 
 ### Feature of the web page
 
-
+Update items, Add item to the cart, Delete the item, Game page(From project one)
 
 Weekend Escape is still a model of the store web page and it will be completed in the future.
+
+###
